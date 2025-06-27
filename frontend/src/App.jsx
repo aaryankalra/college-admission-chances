@@ -1,14 +1,13 @@
 import "./App.css";
+import ThemeButton from "./components/ThemeButton";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <>
       <div>
-        <h1 className="text-3xl font-bold">UniChance</h1>
-        <p className="text-xl">
-          Predict your chances at the world's best universities.
-        </p>
-        <button className="btn btn-success">Get Started</button>
+        <ThemeButton />
+        <HomePage />
       </div>
     </>
   );
