@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const HeroSection = () => {
   return (
@@ -13,8 +14,10 @@ const HeroSection = () => {
             <p className="text-2xl">the world's best universities.</p>
           </div>
         </div>
-        <div>
-          <button className="btn btn-success">Get Started</button>
+        <div className="flex flex-col gap-4">
+          <Link to="/auth">
+            <button className="btn btn-primary">Get Started</button>
+          </Link>
         </div>
       </div>
     </>

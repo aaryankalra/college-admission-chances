@@ -1,13 +1,20 @@
+import { Route, Routes } from "react-router";
 import "./App.css";
 import ThemeButton from "./components/ThemeButton";
 import HomePage from "./pages/HomePage";
+import AuthPage from "./pages/AuthPage";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
     <>
       <div>
         <ThemeButton />
-        <HomePage />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/auth" element={<AuthPage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
       </div>
     </>
   );
