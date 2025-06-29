@@ -4,6 +4,7 @@ import ThemeButton from "./components/ThemeButton";
 import HomePage from "./pages/HomePage";
 import AuthPage from "./pages/AuthPage";
 import Dashboard from "./pages/Dashboard";
+import ProtectedRoute from "./utils/auth/ProtectedRoute";
 
 function App() {
   return (
@@ -13,7 +14,14 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/auth" element={<AuthPage />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
       </div>
     </>
