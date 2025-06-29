@@ -134,3 +134,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Dataset
+dataset/
+
+# Jupyter Checkpoints
+**/.ipynb_checkpoints/
