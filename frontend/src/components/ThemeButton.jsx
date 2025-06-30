@@ -5,7 +5,7 @@ const ThemeButton = () => {
     <>
       <div className="absolute right-12 top-4">
         <label className="swap swap-rotate">
-          <input type="checkbox" className="theme-controller" value="light" />
+          <input type="checkbox" className="theme-controller" value="garden" />
 
           <svg
             className="swap-off h-8 w-8 fill-current"

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import { GraduationCap } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -7,7 +8,12 @@ const HeroSection = () => {
       <div className="text-center flex flex-col gap-8">
         <div className="flex flex-col gap-2">
           <div>
-            <h1 className="text-5xl font-bold">UniChance</h1>
+            <h1 className="flex items-center gap-4 text-5xl font-bold">
+              UniChance{" "}
+              <span>
+                <GraduationCap size={60} />
+              </span>
+            </h1>
           </div>
           <div>
             <p className="text-2xl">Predict your chances at</p>

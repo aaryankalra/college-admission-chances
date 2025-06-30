@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { supabase } from "../utils/supabase";
 import { useNavigate } from "react-router";
+import Form from "../components/dashboard/Form";
 
 const Dashboard = () => {
   const [loading, setLoading] = useState(false);
@@ -25,9 +26,12 @@ const Dashboard = () => {
 
   return (
     <>
-      <div>
+      <div className="min-h-screen flex flex-col items-center justify-center">
+        <div>
+          <Form />
+        </div>
         <button
-          className="btn btn-error"
+          className="absolute right-24 top-3 btn btn-error"
           onClick={handleLogout}
           disabled={loading}
         >
